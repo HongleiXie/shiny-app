@@ -1,11 +1,21 @@
-shinyUI(pageWithSidebar(
-  headerPanel('Test Test Test'),
-  sidebarPanel(
-    selectInput('bus', 'Business Lines', names(table(data$bus))),
-    selectInput('type', 'Calls Type', names(table(data$joint)))
-
+shinyUI(bootstrapPage(
+  # Add custom CSS & Javascript;
+  tagList(
+    tags$head(
+      tags$link(rel="stylesheet", type="text/css",href="style.css"),
+      tags$script(type="text/javascript", src = "md5.js"),
+      tags$script(type="text/javascript", src = "passwdInputBinding.js")
+    )
   ),
-  mainPanel(
-    plotOutput('plot1')
-  )
+  
+  ## Login module;
+  div(class = "login",
+      uiOutput("uiLogin"),
+      textOutput("pass")
+  ), 
+  
+  div(class = "span4", uiOutput("bus")),
+  div(class = "span4", uiOutput("type")),
+  div(class = "span8", plotOutput("plot1"))
+  
 ))
