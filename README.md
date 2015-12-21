@@ -12,4 +12,5 @@ I'm developing an interactive data visualization tool by Shiny for the business 
 ## TO DO
 - Add targets info; achieve it or not
 - Add HR hierarchy info so users can get any level information as requested
+- For the total summary report, we probably need to break down joint calls into different partners, not discriminate client types?
 
