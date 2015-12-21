@@ -6,7 +6,7 @@ PASSWORD <- data.frame(Brukernavn = "test", Passord = "BLACKOUT PASSWORD");
 
 positions <- c('AUG', 'SEP', 'OCT', 'NOV');
 
-dir.data <- "C:\\Users\\s4120339\\Desktop\\shiny";
+dir.data <- "PATH TO SHINY FOLDER";
 
 data <- read.xlsx(xlsxFile = file.path(dir.data, 'data.xlsx'), 
                   sheet = 1, 
