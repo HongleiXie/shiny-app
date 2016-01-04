@@ -12,6 +12,5 @@ I'm developing an interactive data visualization tool by Shiny for the business 
 
 
 ## TO DO
-
-- For the total summary report, we probably need to break down joint calls into different partners, not discriminate client types?
+- Add analytical reports for people in different levels, GL, ML, VP etc....
 
