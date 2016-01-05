@@ -12,13 +12,18 @@ shinyUI(bootstrapPage(
   div(class = "login",
       uiOutput("uiLogin"),
       textOutput("pass")
-  ), 
+    ), 
   
   h1("Welcome to Scotiabank Commercial Banking"),
   
-  div(class = "span4", uiOutput("crm")),
-  div(class = "span4", plotOutput("plot1")),
-  div(class = "span4", plotOutput("plot2"))
+  sidebarPanel(
+    selectInput('crm', 'CRM Name', unique(names(table(data$CRM))))
+    ),
+  #div(class = "span4", uiOutput("crm")),
+  mainPanel(
+    plotOutput('plot1'),
+    plotOutput('plot2')
+  )
   
   
   
