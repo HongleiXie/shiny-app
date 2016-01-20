@@ -2,7 +2,6 @@
 
 ## Summary
 I'm developing an interactive data visualization tool by Shiny for the business portfolio analytics purpose. 
-For CRM use: https://holly.shinyapps.io/MIS_CRM
 
 ## Features
 - [Shiny](http://shiny.rstudio.com/) enables audience to visualize the data and graphs interactively.
