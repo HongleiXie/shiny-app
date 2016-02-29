@@ -1,7 +1,7 @@
 # Shiny App
 
 ## Summary
-An interactive data visualization tool by Shiny for the business portfolio analytics purpose(as well as serving the shiny practise purpose). 
+An interactive data visualization tool by Shiny for the business portfolio analytics purpose (as well as serving the shiny practise purpose). 
 
 ## Features
 - [Shiny](http://shiny.rstudio.com/) enables audience to visualize the data and graphs interactively.
